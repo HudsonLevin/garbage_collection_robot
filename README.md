@@ -29,10 +29,10 @@ Watch the system in action during our laboratory testing:
 
 ## 🚀 How to Run (Simulation Environment)
 
-## 1. Prerequisites
+### 1. Prerequisites
 Ensure you have **ROS 2 (Foxy or Humble)** and **Gazebo** installed on your Ubuntu system.
 
-## 2. Setup and Build the Workspace
+### 2. Setup and Build the Workspace
 Clone this repository into the `src` folder of your ROS 2 workspace and build the package:
 ```bash
 cd ~/ros2_ws/src
@@ -40,16 +40,15 @@ git clone [https://github.com/HudsonLevin/garbage_collection_robot.git](https://
 cd ~/ros2_ws
 colcon build --packages-select articubot_one
 ```
-
-3. Source the Environment
+### 3. Source the Environment
 After a successful build, source the ROS 2 environment and your local setup:
+(Note: Replace humble with foxy depending on your installed version).
 ```bash
-# Replace 'humble' with 'foxy' depending on your installed version
 source /opt/ros/humble/setup.bash
 source install/setup.bash
 ```
 
-5. Launch the Simulation
+### 4. Launch the Simulation
 Launch the Gazebo world and spawn the robot (replace [launch_file_name] with your specific launch file):
 ```bash
 ros2 launch articubot_one [launch_file_name].launch.py
