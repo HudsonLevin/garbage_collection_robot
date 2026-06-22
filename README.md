@@ -36,7 +36,7 @@ Ensure you have **ROS 2 (Foxy or Humble)** and **Gazebo** installed on your Ubun
 Clone this repository into the `src` folder of your ROS 2 workspace and build the package:
 ```bash
 cd ~/ros2_ws/src
-git clone [https://github.com/HudsonLevin/garbage_collection_robot.git](https://github.com/HudsonLevin/garbage_collection_robot.git)
+git clone https://github.com/HudsonLevin/garbage_collection_robot.git
 cd ~/ros2_ws
 colcon build --packages-select articubot_one
 ```
